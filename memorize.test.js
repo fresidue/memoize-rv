@@ -34,4 +34,13 @@ describe('Testing memorize.js', () => {
     expect(a === b).to.be.false;
     expect(b === c).to.be.true;
   });
+
+  it('should be expected that readme examples are true', () => {
+    const func = (a, b) => [a, b];
+    const memd = memorize(func);
+    expect(memd(1, 2) === memd(1, 2)).to.be.false;
+    const eq = (a, b) => ((a && b) && a[0] === b[0] && a[1] === b[1]);
+    const memd2 = memorize(func, eq);
+    expect(memd2(1, 2) === memd2(1, 2)).to.be.true;
+  });
 });
