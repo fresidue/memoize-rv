@@ -12,7 +12,7 @@ const memorize = (func, equalityCheck) => {
       return previous;
     } else {
       previous = current;
-      return previous;
+      return current;
     }
   };
   return memorized;
