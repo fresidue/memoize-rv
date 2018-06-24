@@ -4,7 +4,7 @@
   "description": "memoizes the previous output of a supplied function, and tries to return that again",
   "main": "memoize-rv.js",
   "scripts": {
-    "test-watch": "mocha memoize-rv.test",
+    "test-watch": "mocha memoize-rv.test --watch",
     "test": "mocha memoize-rv.test"
   },
   "keywords": [
@@ -23,5 +23,13 @@
     "mocha": "^5.2.0",
     "shallowequal": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fresidue/memoize-rv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fresidue/memoize-rv/issues"
+  },
+  "homepage": "https://github.com/fresidue/memoize-rv#readme"
 }

@@ -11,13 +11,13 @@ This is NOT for use with async functions/promises.
 const mem = require('memoize-rv');
 ```
 
-#### mem(func, [checkEqualityFunc])
+#### mem(func, [equalityCheck])
 
 returns a function `memFunc` that can be used in place of `func`.
 
 When `memFunc` is first evaluated, the return value is stored. Upon repeated evaluation, if the return value is deemed equal to the stored value, then the new value is simply discarded, and the stored value is both kept and returned in place of the new value.
 
-The default equality check is simply `(rv, stored) => rv === stored`, but a custom equality check is the optional second argument.
+The default equality check is simply `(rv, stored) => rv === stored`, but a custom 'equality check' function is the optional second argument.
 
 ## usage
 Given a function `func` of some sort
