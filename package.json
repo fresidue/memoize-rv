@@ -1,7 +1,7 @@
 {
   "name": "memoize-rv",
   "version": "1.0.0",
-  "description": "memoizes the previous output of a supplied function, and tries to return that again.",
+  "description": "memoizes the previous output of a supplied function, and tries to return that again",
   "main": "memoize-rv.js",
   "scripts": {
     "test-watch": "mocha memoize-rv.test",

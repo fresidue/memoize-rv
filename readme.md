@@ -38,6 +38,7 @@ const eq = (a, b) => ((a && b) && a[0] === b[0] && a[1] === b[1]);
 const memFuncEq = mem(func, eq);
 const valEq1 = memFuncEq(1, 2); // [1, 2]
 const valEq2 = memFuncEq(1, 2); // [1, 2]
+// now they are evaluated equal
 const areSame = valEq1 === valEq2; // true
 ```
 ### license
