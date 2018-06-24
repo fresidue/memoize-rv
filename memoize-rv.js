@@ -3,7 +3,7 @@
 const defaultEqualityCheck = (a, b) => a === b;
 
 const mem = (func, equalityCheck) => {
-  let previous = null;
+  let previous;
   const equals = equalityCheck || defaultEqualityCheck;
   // use function for access to arguments
   const memd = function (...args) {
