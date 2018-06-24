@@ -1,5 +1,6 @@
 ## memorize
 
+
 memorize wraps a function, storing the immediately previous return value. Upon repeated evaluation, the next return value is compared to the previous (the default equality operator is '==='). If the current and previous values are found to be equal, the previous value is retained and returned again.
 
 This is definitely reinventing the wheel, but is useful if the same object needs to be returned consecutively depending upon some condition.
