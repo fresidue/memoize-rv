@@ -1,26 +1,22 @@
 {
-  "name": "memorize",
+  "name": "memoize-rv",
   "version": "1.0.0",
-  "description": "memo(r)izes the previous output of a supplied function, and tries to return that again.",
-  "main": "memorize.js",
+  "description": "memoizes the previous output of a supplied function, and tries to return that again.",
+  "main": "memoize-rv.js",
   "scripts": {
-    "test": "mocha memorize.test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/fresidue/memorize.git"
+    "test-watch": "mocha memoize-rv.test",
+    "test": "mocha memoize-rv.test"
   },
   "keywords": [
     "memorize",
+    "memoize",
+    "remember",
+    "immutable",
     "previous",
     "output"
   ],
   "author": "fresidue",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fresidue/memorize/issues"
-  },
-  "homepage": "https://github.com/fresidue/memorize#readme",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
     "lodash": "^4.17.10",

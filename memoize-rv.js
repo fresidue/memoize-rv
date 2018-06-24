@@ -1,13 +1,13 @@
-'use strict';
+// memoize-rv.js
 
 const defaultEqualityCheck = (a, b) => a === b;
 
-const memorize = (func, equalityCheck) => {
+const mem = (func, equalityCheck) => {
   let previous = null;
   const equals = equalityCheck || defaultEqualityCheck;
   // use function for access to arguments
-  const memorized = function () {
-    const current = func.apply(null, arguments);
+  const memd = function (...args) {
+    const current = func(...args);
     if (equals(current, previous)) {
       return previous;
     } else {
@@ -15,9 +15,7 @@ const memorize = (func, equalityCheck) => {
       return current;
     }
   };
-  return memorized;
+  return memd;
 };
 
-module.exports = {
-  memorize
-};
+module.exports = mem;
